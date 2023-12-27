@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="head_container">
+      <h1 class="head_title">Bookshelf</h1>
+    </header>
+    <main>
+      <div class="main_container">
+        <div class="book_section">
+          <section class="input_section">
+            <h2>Add New Book</h2>
+            <form id="inputBook" class="form_input">
+              <div class="input">
+                <label for="inputBookTitle">Title</label>
+                <input id="inputBookTitle" type="text" required />
+              </div>
+              <div class="input">
+                <label for="inputBookAuthor">Author</label>
+                <input id="inputBookAuthor" type="text" required />
+              </div>
+              <div class="input">
+                <label for="inputBookYear">Year</label>
+                <input id="inputBookYear" type="number" required />
+              </div>
+              <div class="input_inline">
+                <label for="inputBookIsComplete">Already read</label>
+                <input id="inputBookIsComplete" type="checkbox" />
+              </div>
+              <button id="bookSubmit" class="submit_btn" type="submit">
+                + add book
+              </button>
+            </form>
+          </section>
+          <section class="search_section">
+            <h2>Search Book</h2>
+            <form id="searchBook" class="form_search">
+              <input
+                id="searchBookTitle"
+                type="text"
+                placeholder="Enter the book title"
+              />
+              <button id="searchSubmit" type="submit">Search</button>
+            </form>
+          </section>
+        </div>
+
+        <aside class="shelf_section">
+          <section class="book_shelf">
+            <h2>Unfinished Book</h2>
+            <div id="incompleteBookshelfList" class="book_list">
+              <!-- Book -->
+            </div>
+          </section>
+          <section class="book_shelf">
+            <h2>Finished Book</h2>
+            <div id="completeBookshelfList" class="book_list">
+              <!-- Book -->
+            </div>
+          </section>
+        </aside>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
